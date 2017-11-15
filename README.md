@@ -1,5 +1,5 @@
 # MinimalX-JPMod
-VLC Media Player用スキンを日本語環境に最適化したスキンです。本体の日本語化はしてません。
+Maverick07x氏によるVLC Media Player用スキンの「MinimalX」を、デフォルトだと文字化けするので日本語環境に最適化したスキンです。本体の日本語化はしてません。
 
 # Usage
 .vlt（スキンファイル）をダウンロードしたらVLCのインストールフォルダ内のskinsフォルダ内にぶち込んでください。（デフォルトでは"C:\Program Files (x86)\VideoLAN\VLC\skins"とか？）
