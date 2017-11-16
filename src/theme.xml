@@ -4,7 +4,7 @@
 
   <!-- Created using the VLC Skin Editor 0.8.6.dev (http://www.videolan.org/vlc/skineditor.html)-->
 
-  <Font id="GenEiGothicN" file="files/GenEiGothicN-Regular.otf" size="14"/>
+  <Font id="GenShinGothic-P" file="files/GenShinGothic-P-Regular.ttf" size="14"/>
   <Bitmap id="img_blank_all" file="files/blank_all.png" alphacolor="#FF00FF">
 	<SubBitmap id="img_cont_blank" x="0" y="0" height="50" width="50"/>
 	<SubBitmap id="img_playtree_blank" x="0" y="0" height="10" width="8"/>
@@ -365,7 +365,7 @@
 			<Button id="cover_title_color1" x="-81" y="75" up="gif_cover_color1" visible="MainWindow.isVisible and (not vlc.hasVout) and (not vlc.hasAudio) and titlebar_off.isActive and color_1.isActive"/>
 			<Button id="cover_title_color2" x="-81" y="75" up="gif_cover_color2" visible="MainWindow.isVisible and (not vlc.hasVout) and (not vlc.hasAudio) and titlebar_off.isActive and color_2.isActive"/>
 			<Button id="cover_title_color3" x="-81" y="75" up="gif_cover_color3" visible="MainWindow.isVisible and (not vlc.hasVout) and (not vlc.hasAudio) and titlebar_off.isActive and color_3.isActive"/>
-		  <Text id="cover_track" text="$N " font="GenEiGothicN" alignment="center" color="#ffffff" x="-50" y="218" width="300" visible="vlc.hasAudio and (not vlc.hasVout) and titlebar_off.isActive"/>
+		  <Text id="cover_track" text="$N " font="GenShinGothic-P" alignment="center" color="#ffffff" x="-50" y="218" width="300" visible="vlc.hasAudio and (not vlc.hasVout) and titlebar_off.isActive"/>
 		</Panel>
       </Panel>
 	  <Panel id="cover_panel_tb" y="29" width="100%" height="393" rightbottom="rightbottom">
@@ -419,20 +419,20 @@
 	  <Panel id="fileinfo_panel" y="395" width="100%" height="27" lefttop="leftbottom" rightbottom="rightbottom">
         <Image id="fileinfo_bg_big" x="0" width="100%" image="img_finfo_650x27" lefttop="leftbottom" rightbottom="rightbottom" visible="fileinfo_on.isActive and posbar_big.isActive"/>
 		<Image id="fileinfo_bg_sml" y="0" width="100%" height="32" image="img_finfo_650x27" lefttop="leftbottom" rightbottom="rightbottom" visible="fileinfo_on.isActive and posbar_small.isActive"/>
-        <Text id="fileinfo_text_big" text="$F" font="GenEiGothicN" alignment="center" color="#ffffff" x="10" y="3" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="(fileinfo_on.isActive and posbar_big.isActive)"/>
-        <Text id="fileinfo_text_sml" text="$F" font="GenEiGothicN" alignment="center" color="#ffffff" x="10" y="5" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="(fileinfo_on.isActive and posbar_small.isActive)"/>
-        <Text id="fileinfo_notext_big" text="Now Playing: -" font="GenEiGothicN" alignment="center" color="#ffffff" x="10" y="3" width="100%" lefttop="leftbottom" rightbottom="rightbottom" visible="((fileinfo_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout)) and posbar_big.isActive)"/>
-        <Text id="fileinfo_notext_sml" text="Now Playing: -" font="GenEiGothicN" alignment="center" color="#ffffff" x="10" y="5" width="100%" lefttop="leftbottom" rightbottom="rightbottom" visible="((fileinfo_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout)) and posbar_small.isActive)"/>
+        <Text id="fileinfo_text_big" text="$F" font="GenShinGothic-P" alignment="center" color="#ffffff" x="10" y="3" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="(fileinfo_on.isActive and posbar_big.isActive)"/>
+        <Text id="fileinfo_text_sml" text="$F" font="GenShinGothic-P" alignment="center" color="#ffffff" x="10" y="5" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="(fileinfo_on.isActive and posbar_small.isActive)"/>
+        <Text id="fileinfo_notext_big" text="Now Playing: -" font="GenShinGothic-P" alignment="center" color="#ffffff" x="10" y="3" width="100%" lefttop="leftbottom" rightbottom="rightbottom" visible="((fileinfo_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout)) and posbar_big.isActive)"/>
+        <Text id="fileinfo_notext_sml" text="Now Playing: -" font="GenShinGothic-P" alignment="center" color="#ffffff" x="10" y="5" width="100%" lefttop="leftbottom" rightbottom="rightbottom" visible="((fileinfo_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout)) and posbar_small.isActive)"/>
       </Panel>
       <Panel id="bottom_left0_panel" y="432" width="175" height="50" lefttop="leftbottom" rightbottom="leftbottom">
 	    <Image id="main_bottombar_left_max" image="img_bottombar_175x50" action="move" action2="VolumeWindow.hide(); PlaylistWindow.hide(); SettingsWindow.hide(); MainWindow.maximize();" lefttop="leftbottom" rightbottom="leftbottom"/>
         <Image id="main_bottombar_left_unmax" image="img_bottombar_175x50" action="move" action2="VolumeWindow.hide(); PlaylistWindow.hide(); SettingsWindow.hide(); MainWindow.unmaximize();" lefttop="leftbottom" rightbottom="leftbottom" visible="MainWindow.isMaximized()"/>
-	    <Text id="bottom_time_1_notime" focus="false" text="0:00:00" font="GenEiGothicN" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
-		<Text id="bottom_time_1_stream" focus="false" text="0:00:00" font="GenEiGothicN" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
-		<Text id="bottom_time_1" focus="false" text="$T" font="GenEiGothicN" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and vlc.isSeekable"/>
+	    <Text id="bottom_time_1_notime" focus="false" text="0:00:00" font="GenShinGothic-P" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
+		<Text id="bottom_time_1_stream" focus="false" text="0:00:00" font="GenShinGothic-P" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+		<Text id="bottom_time_1" focus="false" text="$T" font="GenShinGothic-P" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and vlc.isSeekable"/>
         <Image id="bottom_time_slash" image="img_slash" x="95" y="16" lefttop="leftbottom" rightbottom="leftbottom" visible="bottom_0.isActive"/>
-        <Text id="bottom_time_2" focus="false" text="$D" font="GenEiGothicN" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout)"/>
-        <Text id="bottom_time_2_notime" focus="false" text="-:--:--" font="GenEiGothicN" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
+        <Text id="bottom_time_2" focus="false" text="$D" font="GenShinGothic-P" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout)"/>
+        <Text id="bottom_time_2_notime" focus="false" text="-:--:--" font="GenShinGothic-P" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
 		<Button id="bottom_time_stream" up="img_stream_anim" x="108" y="19" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
 	    <Button id="main_goto_panel_1" up="img_arrow" down="img_arrow_press" over="img_arrow_hover" action="bottom.setLayout(bottom_1); VolumeWindow.hide(); PlaylistWindow.hide(); SettingsWindow.hide();"/>
 	  </Panel>
@@ -497,7 +497,7 @@
 			<Image id="cinema_cover_title_color1" x="-81" y="75" image="img_cover_color1" visible="cinema_on.isActive and (not vlc.hasVout) and (not vlc.hasAudio) and color_1.isActive and hint1_off.isActive and (titlebar_on.isActive or titlebar_off.isActive)"/>
 			<Image id="cinema_cover_title_color2" x="-81" y="75" image="img_cover_color2" visible="cinema_on.isActive and (not vlc.hasVout) and (not vlc.hasAudio) and color_2.isActive and hint1_off.isActive and (titlebar_on.isActive or titlebar_off.isActive)"/>
 			<Image id="cinema_cover_title_color3" x="-81" y="75" image="img_cover_color3" visible="cinema_on.isActive and (not vlc.hasVout) and (not vlc.hasAudio) and color_3.isActive and hint1_off.isActive and (titlebar_on.isActive or titlebar_off.isActive)"/>
-			<Text id="cover_track" text="$N " font="GenEiGothicN" alignment="center" color="#ffffff" x="-50" y="218" width="300" visible="cinema_on.isActive and vlc.hasAudio and (not vlc.hasVout) and hint1_off.isActive and (titlebar_on.isActive or titlebar_off.isActive)"/>
+			<Text id="cover_track" text="$N " font="GenShinGothic-P" alignment="center" color="#ffffff" x="-50" y="218" width="300" visible="cinema_on.isActive and vlc.hasAudio and (not vlc.hasVout) and hint1_off.isActive and (titlebar_on.isActive or titlebar_off.isActive)"/>
           </Panel>
         </Panel>
 		<Panel id="cinema_cover_panel" width="100%" height="440" rightbottom="rightbottom">
@@ -512,8 +512,8 @@
 		</Panel>
 		<Panel id="cinema_bottom_panel" y="440" width="100%" height="42" lefttop="leftbottom" rightbottom="rightbottom">
 			<Image id="cinema_fileinfo_bg" width="100%" y="0" height="32" image="img_finfo_650x27" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive and (fileinfo_on.isActive or hint1_on.isActive)"/>
-			<Text id="cinema_fileinfo" text="$F" font="GenEiGothicN" alignment="center" color="#ffffff" x="10" y="5" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive and fileinfo_on.isActive and hint1_off.isActive"/>
-			<Text id="cinema_fileinfo_text" text="Now Playing: -" font="GenEiGothicN" alignment="center" color="#ffffff" x="10" y="5" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive and fileinfo_on.isActive and hint1_off.isActive and (not vlc.hasAudio) and (not vlc.hasVout)"/>
+			<Text id="cinema_fileinfo" text="$F" font="GenShinGothic-P" alignment="center" color="#ffffff" x="10" y="5" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive and fileinfo_on.isActive and hint1_off.isActive"/>
+			<Text id="cinema_fileinfo_text" text="Now Playing: -" font="GenShinGothic-P" alignment="center" color="#ffffff" x="10" y="5" width="730" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive and fileinfo_on.isActive and hint1_off.isActive and (not vlc.hasAudio) and (not vlc.hasVout)"/>
 			<Image id="cinema_bottombar" width="100%" y="32" image="img_cinemabar" action="move" action2="hint1.setLayout(hint1_off); cinema.setLayout(cinema_off);" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive"/>
 			<Image id="cinema_corner" x="740" y="32" image="img_cinemabar_corner" action="resizeSE" action2="hint1.setLayout(hint1_off); cinema.setLayout(cinema_off)" lefttop="rightbottom" rightbottom="rightbottom" visible="cinema_on.isActive and (not MainWindow.isMaximized)"/>
 				<Panel id="cinema_hint1_panel" x="275" y="0" width="200" height="200" xkeepratio="true" ykeepratio="true">
@@ -526,8 +526,8 @@
   	  <Panel id="main_titlebar_panel" width="100%" height="29" rightbottom="righttop">
 	  	<Image id="main_titlebar_max" width="100%" x="0" y="0" image="img_bottombar_650x29" action="move" resize="scale" action2="MainWindow.maximize()" lefttop="lefttop" rightbottom="righttop" visible="titlebar_on.isActive and cinema_off.isActive"/>
 		<Image id="main_titlebar_unmax" width="100%" x="0" y="0" image="img_bottombar_650x29" action="move" resize="scale" action2="MainWindow.unmaximize()" lefttop="lefttop" rightbottom="righttop" visible="titlebar_on.isActive and cinema_off.isActive and MainWindow.isMaximized()"/>
-		<Text id="titlebar_title" text="$N" font="GenEiGothicN" alignment="left" color="#ffffff" x="12" y="4" width="590" rightbottom="righttop" visible="titlebar_on.isActive and cinema_off.isActive and vlc.hasAudio" focus="false"/>
-        <Text id="titlebar_vlc" text="VLC media player" font="GenEiGothicN" alignment="left" color="#ffffff" x="12" y="4" width="125" rightbottom="lefttop" visible="(titlebar_on.isActive and cinema_off.isActive and (not vlc.hasAudio)) and false" focus="false"/>
+		<Text id="titlebar_title" text="$N" font="GenShinGothic-P" alignment="left" color="#ffffff" x="12" y="4" width="590" rightbottom="righttop" visible="titlebar_on.isActive and cinema_off.isActive and vlc.hasAudio" focus="false"/>
+        <Text id="titlebar_vlc" text="VLC media player" font="GenShinGothic-P" alignment="left" color="#ffffff" x="12" y="4" width="125" rightbottom="lefttop" visible="(titlebar_on.isActive and cinema_off.isActive and (not vlc.hasAudio)) and false" focus="false"/>
 		<Button id="titlebar_back" up="img_titlebar_back" down="img_titlebar_back_active" over="img_titlebar_back_hover" action="cinema.setLayout(cinema_off)" y="0" x="1" rightbottom="lefttop" visible="false"/>
       </Panel>
 
@@ -567,9 +567,9 @@
       <Anchor id="playlist_anchor" y="482" priority="1" lefttop="leftbottom"/>
       <Panel id="playlist_panel" x="10" y="162" width="300" height="250" lefttop="leftbottom" rightbottom="leftbottom">
 		<Image id="playlist_slider_background" x="290" y="50" image="img_pl_slider_bg"/>
-        <Playtree id="playtree_color1" font="GenEiGothicN" bgcolor1="#ececec" bgcolor2="#ececec" fgcolor="#202020" selcolor="#d0d0d0" playcolor="#ff005a" itemimage="img_playtree_blank" y="30" width="300" height="220" visible="color_1.isActive"/>
-        <Playtree id="playtree_color2" font="GenEiGothicN" bgcolor1="#ececec" bgcolor2="#ececec" fgcolor="#202020" selcolor="#d0d0d0" playcolor="#00aeff" itemimage="img_playtree_blank" y="30" width="300" height="220" visible="color_2.isActive"/>
-        <Playtree id="playtree_color3" font="GenEiGothicN" bgcolor1="#ececec" bgcolor2="#ececec" fgcolor="#202020" selcolor="#d0d0d0" playcolor="#12e35c" itemimage="img_playtree_blank" y="30" width="300" height="220" visible="color_3.isActive">
+        <Playtree id="playtree_color1" font="GenShinGothic-P" bgcolor1="#ececec" bgcolor2="#ececec" fgcolor="#202020" selcolor="#d0d0d0" playcolor="#ff005a" itemimage="img_playtree_blank" y="30" width="300" height="220" visible="color_1.isActive"/>
+        <Playtree id="playtree_color2" font="GenShinGothic-P" bgcolor1="#ececec" bgcolor2="#ececec" fgcolor="#202020" selcolor="#d0d0d0" playcolor="#00aeff" itemimage="img_playtree_blank" y="30" width="300" height="220" visible="color_2.isActive"/>
+        <Playtree id="playtree_color3" font="GenShinGothic-P" bgcolor1="#ececec" bgcolor2="#ececec" fgcolor="#202020" selcolor="#d0d0d0" playcolor="#12e35c" itemimage="img_playtree_blank" y="30" width="300" height="220" visible="color_3.isActive">
           <Slider id="playlist_slider" x="290" points="(5,215),(5,65)" up="img_pl_slider" down="img_pl_slider_press" over="img_pl_slider_hover" lefttop="righttop" rightbottom="rightbottom"/>
         </Playtree>
         <Button id="playlist_native" up="img_sett_pl" down="img_sett_pl_press" over="img_sett_pl_hover" action="dialogs.playlist()" lefttop="righttop" rightbottom="righttop"/>
@@ -676,10 +676,10 @@
 		<Image id="volume_overlay_sml" y="5" image="img_volume_overlay" visible="posbar_small.isActive"/>
 		<Checkbox id="volume_mute_big" state="vlc.isMute" up1="img_mute" up2="img_mute" down1="img_mute_press" down2="img_mute_press" over1="img_mute_hover" over2="img_mute_hover" action1="vlc.mute()" action2="vlc.mute()" x="125" y="0" visible="posbar_big.isActive"/>
 		<Checkbox id="volume_mute_sml" state="vlc.isMute" up1="img_mute" up2="img_mute" down1="img_mute_press" down2="img_mute_press" over1="img_mute_hover" over2="img_mute_hover" action1="vlc.mute()" action2="vlc.mute()" x="125" y="5" visible="posbar_small.isActive"/>
-		<Text id="volume_text_big" text="$V" font="GenEiGothicN" alignment="center" color="#161616" x="125" y="15" width="50" visible="posbar_big.isActive and (not vlc.isMute)" focus="false"/>
-		<Text id="volume_text_big_mute" text="$V" font="GenEiGothicN" alignment="center" color="#787878" x="125" y="15" width="50" visible="posbar_big.isActive and vlc.isMute" focus="false"/>
-		<Text id="volume_text_sml" text="$V" font="GenEiGothicN" alignment="center" color="#161616" x="125" y="20" width="50" visible="posbar_small.isActive and (not vlc.isMute)" focus="false"/>
-		<Text id="volume_text_sml_mute" text="$V" font="GenEiGothicN" alignment="center" color="#787878" x="125" y="20" width="50" visible="posbar_small.isActive and vlc.isMute" focus="false"/>
+		<Text id="volume_text_big" text="$V" font="GenShinGothic-P" alignment="center" color="#161616" x="125" y="15" width="50" visible="posbar_big.isActive and (not vlc.isMute)" focus="false"/>
+		<Text id="volume_text_big_mute" text="$V" font="GenShinGothic-P" alignment="center" color="#787878" x="125" y="15" width="50" visible="posbar_big.isActive and vlc.isMute" focus="false"/>
+		<Text id="volume_text_sml" text="$V" font="GenShinGothic-P" alignment="center" color="#161616" x="125" y="20" width="50" visible="posbar_small.isActive and (not vlc.isMute)" focus="false"/>
+		<Text id="volume_text_sml_mute" text="$V" font="GenShinGothic-P" alignment="center" color="#787878" x="125" y="20" width="50" visible="posbar_small.isActive and vlc.isMute" focus="false"/>
 		<Image id="volume_border_icon" y="119" x="85" image="img_border_main" width="50"/>
       </Panel>
     </Layout>
@@ -791,12 +791,12 @@
 		<Image id="bottom_resize_E" y="0" x="170" image="img_bottombar_5x50" action="resizeE" lefttop="rightbottom" rightbottom="rightbottom"/>
       </Panel>
 	  <Panel id="fs_bottom_left0_panel" y="10" width="175" height="50" lefttop="leftbottom" rightbottom="leftbottom">
-	    <Text id="fs_time_1_notime" focus="false" text="0:00:00" font="GenEiGothicN" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
-		<Text id="fs_time_1_stream" focus="false" text="0:00:00" font="GenEiGothicN" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
-		<Text id="fs_time_1" focus="false" text="$T" font="GenEiGothicN" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and vlc.isSeekable"/>
+	    <Text id="fs_time_1_notime" focus="false" text="0:00:00" font="GenShinGothic-P" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
+		<Text id="fs_time_1_stream" focus="false" text="0:00:00" font="GenShinGothic-P" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+		<Text id="fs_time_1" focus="false" text="$T" font="GenShinGothic-P" color="#ffffff" x="45" y="15" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and vlc.isSeekable"/>
         <Image id="fs_time_slash" image="img_slash" x="95" y="16" lefttop="leftbottom" rightbottom="leftbottom" visible="bottom_0.isActive"/>
-        <Text id="fs_time_2" focus="false" text="$D" font="GenEiGothicN" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout)"/>
-        <Text id="fs_time_2_notime" focus="false" text="-:--:--" font="GenEiGothicN" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
+        <Text id="fs_time_2" focus="false" text="$D" font="GenShinGothic-P" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout)"/>
+        <Text id="fs_time_2_notime" focus="false" text="-:--:--" font="GenShinGothic-P" color="#ffffff" x="108" y="15" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
 		<Button id="fs_time_stream" up="img_stream_anim" x="108" y="19" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
         <Button id="fs_goto_panel_1" up="img_arrow" down="img_arrow_press" over="img_arrow_hover" action="bottom.setLayout(bottom_1);"/>
       </Panel>
